@@ -1,0 +1,295 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="es"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Saas Startup App HTML Template">
+        <meta name="author" content="DynamicLayers">
+       
+        <title>Saturnow - Creación de sitios webs</title>
+        
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon_blanco.png">
+		
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/themify-icons.css">
+        <link rel="stylesheet" href="css/elegant-line-icons.css">
+        <link rel="stylesheet" href="css/truno-icons.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/slicknav.min.css">
+        <link rel="stylesheet" href="css/pricing-table.css">
+        <link rel="stylesheet" href="css/odometer.min.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/venobox.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {
+                // https://dashboard.emailjs.com/admin/account
+                emailjs.init({
+                  publicKey: "KwVdoTfWsyDYj6YF_",
+                });
+            })();
+        </script>
+
+<script type="text/javascript">
+    window.onload = function() {
+        document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let msg = $("#output_msg")
+            // these IDs from the previous steps
+            emailjs.sendForm("service_hayp49o","template_8fs6t8i", this)
+                .then(() => {
+                    msg.append('<div class="alert alert-success">¡Mensaje enviado correctamente!</div>')
+                }, (error) => {
+                    msg.append('<div class="alert alert-danger">¡No se pudo enviar el mensaje correctamente!. Intente nuevamente mas tarde.</div>')
+                    console.log('FAILED...', error);
+                });
+        });
+    }
+</script>
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target="#mainmenu" data-offset="80">
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <div class="site-preloader-wrap">
+            <div class="spinner"></div>
+        </div><!-- Preloader -->
+        
+        <header id="header" class="header-section">
+            <div class="container">
+                <nav class="navbar ">
+                    <a href="./" class="navbar-brand"><img src="img/logo_negro.png" alt="Saturnos" width="200"></a>
+                    <div class="d-flex menu-wrap">
+                       <div id="mainmenu" class="mainmenu">
+                           <ul class="nav">
+                               <li><a data-scroll class="nav-link active" href="#home">Inicio<span class="sr-only">(current)</span></a>
+                                </li>                                
+                                <li><a data-scroll class="nav-link" href="#servicios">Servicios</a></li>
+                                <li><a data-scroll class="nav-link" href="#nosotros">Nosotros</a></li>
+                                <li><a data-scroll class="nav-link" href="#faq">Preguntas y Respuestas</a></li>
+                                <li><a data-scroll class="nav-link" href="#contacto">Contacto</a></li>
+                            </ul>
+                       </div>
+                       <div class="header-right">
+                             <a class="menu-btn purple anim-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScD9OWeTH4YljYP835g8WtiC9Y2hUqK2ONpHma4wRtIQ2m5Rg/viewform" target="_blank">Obtene tu presupuesto<span></span></a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+		</header><!--/. header-section -->
+        
+        <section id="home" class="hero-section pos-rel hero-3">
+            <div class="hero-3-bg-img"></div>
+            <div class="container pos-rel">
+                <div class="hero-wrap row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content text-center text-md-left">    
+                            <h1>Llevá a tu empresa al siguiente nivel</h1>
+                            <p>Mas de 8 años creando sitios webs para pequeñas y medianas empresas, cumpliendo con todos los requisitos que necesites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-moc-4 d-none d-lg-block"></div>
+            </div>
+        </section><!--/. hero-section -->
+        
+        <section id="servicios" class="features-section padding">
+            <div class="container">
+                <div class="section-heading mb-40 text-center">
+                   <h2>Servicios</h2>
+                   <p>Hace mas de 8 años nos dedicamos a todo lo relacionado en el ámbito web. Conocé todos nuestros servicios.</p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 sm-padding">
+                        <div class="features-item item-2">
+                           <div class="features-pattern"></div>
+                            <i class="ti-settings color-purple"></i>
+                            <h3>Mantenimiento</h3>
+                            <p>Si ya tenés tu sitios web hecho y necesitas un mantenimiento, no importa con que tecnología este hecho podemos hacerlo.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 sm-padding">
+                        <div class="features-item active item-2">
+                           <div class="features-pattern"></div>
+                            <i class="ti-wand color-purple"></i>
+                            <h3>Creación sitios web</h3>
+                            <p>Ya sea que necesites una Landing Page (una pagina) o una Multi site (multiples páginas dentro de tu sitio web) podemos ayudarte.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 sm-padding">
+                        <div class="features-item item-2">
+                           <div class="features-pattern"></div>
+                            <i class="ti-wordpress color-purple"></i>
+                            <h3>Desarrollo de panel administrativo (CMS)</h3>
+                            <p>Con tu CMS podes tener el control total de su página, cargando images, editando textos, subir y controlar productos, etc..</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/. features-section -->
+        
+        <section id="nosotros" class="content-section content-3 pos-rel px-3">
+            <div class="dashboard-moc d-none d-md-block"></div>
+            <div class="container pos-rel padding">
+                <div class="content-wrap row align-items-center">
+                    <div class="col-md-6 offset-md-6">
+                        <div class="content-info">
+                            <h2>Especialista en la creación de <br>sitios web.</h2>
+                            <p>Creemos que cada detalle cuenta. Por eso, utilizamos las últimas tecnologías y las mejores prácticas del sector para entregar sitios web que no solo son visualmente impactantes, sino también optimizados para el rendimiento, la velocidad y la seguridad. Además, nos enfocamos en la escalabilidad y la adaptabilidad (WCAG), garantizando que tu sitio web evolucione junto a tu negocio.</p>
+                            <p>Trabajomos con las siguientes tecnologias:
+                                <ul>
+                                    <li><i class="ti-check color-purple"></i> Html y Css</li>
+                                    <li><i class="ti-check color-purple"></i> Javascript</li>
+                                    <li><i class="ti-check color-purple"></i> PHP y MySQL</li>
+                                    <li><i class="ti-check color-purple"></i> Wordpress</li>
+                                    <li><i class="ti-check color-purple"></i> Shopify</li>
+                                </ul>
+                            </p>
+                            <a class="default-btn purple" data-scroll href="#contacto">Contactate<span></span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!--/. content-section -->
+        
+        <section id="screenshots" class="screenshot-section pos-rel padding">
+            <div class="yellow-shape"></div>
+            <div class="section-heading text-center mb-40">
+                <h2>Trabajos</h2>
+                <p>Algunos trabajos que fuimos realizando.</p>
+            </div>
+             <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+                        <div id="screenshot-carousel" class="screenshot-carousel owl-carousel">
+                             <div class="screenshot-item">
+                                 <img src="img/app-ss-1.png" alt="img">
+                             </div>
+                             <div class="screenshot-item">
+                                 <img src="img/app-ss-2.png" alt="img">
+                             </div>
+                             <div class="screenshot-item">
+                                 <img src="img/app-ss-3.png" alt="img">
+                             </div>
+                             <div class="screenshot-item">
+                                 <img src="img/app-ss-2.png" alt="img">
+                             </div>
+                         </div>
+                    </div>
+                </div>
+             </div>
+         </section><!--/. screenshot-section -->
+       
+         <section class="contact-section padding" id="contacto">
+            <div class="map"></div>
+		    <div class="container">
+		        <div class="contact-wrap d-flex align-items-center row">
+                    <div class="col-lg-6 sm-padding">
+		                <div class="contact-info">
+		                    <h2>Comunicate con nosotros y te responderemos a la brevedad.</h2>
+		                    <p><b>Nunca</b> recibirás SPAM por nuestra parte!</p>
+                            <hr>
+		                    <h3>Buenos Aires, Argentina</h3>
+		                </div>
+		            </div>
+		            <div class="col-lg-6 sm-padding">
+		                <div class="contact-form">
+                            <form class="form-horizontal"  id="contact-form">
+                                <div class="form-group colum-row row">
+                                    <div class="col-sm-6">
+                                        <input type="text" id="name" name="name" class="form-control" placeholder="Nombre" required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <textarea id="message" name="message" cols="30" rows="5" class="form-control message" placeholder="Mensaje" required></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <button id="submit" class="default-btn btn-blue" type="submit">Enviar mensaje</button>
+                                    </div>
+                                </div>
+                                <div id="output_msg"></div>
+                            </form>
+                        </div>
+		            </div>
+		        </div>
+		    </div>
+		</section><!--/. contact-section -->
+        <footer class="widget-section widget-3">
+            <div class="container">
+                <div class="widget-wrap row padding">
+                    <div class="col-md-6 col-sm-6 xs-padding">
+                        <div class="widget-content mt-4">
+                            <img src="img/logo_negro.png" width="260" alt="img">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 xs-padding">
+                        <div class="widget-content">
+                            <h3>Links</h3>
+                            <ul class="widget-list ml-15">
+                                <li><a data-scroll href="#">Inicio</a></li>
+                                <li><a data-scroll href="#servicios">Servicios</a></li>
+                                <li><a data-scroll href="#nosotros">Nosotros</a></li>
+                                <li><a data-scroll href="#faq">Preguntas y Respuestas</a></li>
+                                <li><a data-scroll href="#contacto">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section footer-2">
+                <div class="container">
+                   <div class="footer-wrap row">
+                       <div class="col-md-4">
+                            <div class="footer-content">
+                               <p>&copy; <span id="currentYear"></span> Todos los derechos reservados a Saturnow</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4 xs-padding">
+                            <div class="footer-item">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <ul class="footer-social">
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-behance"></i></a></li>
+                            </ul>
+                        </div>
+                   </div>
+                </div>
+		    </div>
+        </footer><!-- /.footer-section -->
+
+		<a data-scroll href="#header" id="scroll-to-top"><i class="ti-arrow-up"></i></a>
+	
+		<!-- jQuery Lib -->
+        <script src="js/vendor/jquery-1.12.4.min.js"></script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/tether.min.js"></script>
+        <script src="js/vendor/jquery.slicknav.min.js"></script>
+        <script src="js/vendor/owl.carousel.min.js"></script>
+        <script src="js/vendor/smooth-scroll.min.js"></script>
+        <script src="js/vendor/jquery.ajaxchimp.min.js"></script>
+        <script src="js/vendor/pricing-switcher.js"></script>
+        <script src="js/vendor/jquery.waypoints.v2.0.3.min.js"></script>
+        <script src="js/vendor/odometer.min.js"></script>
+        <script src="js/vendor/wow.min.js"></script>
+        <script src="js/vendor/venobox.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
