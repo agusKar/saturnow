@@ -64,8 +64,6 @@
     Truno By DynamicLayers
     ========================================================================== */
 
-	@import url('https://fonts.googleapis.com/css?family=Open+Sans|Poppins:400,500,600|Work+Sans:600&display=swap');
-	
 /*  ==========================================================================
     Common Styles
     ========================================================================== */
@@ -75,10 +73,10 @@
 }
 body {
     background-color: #fff;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 15px;
     line-height: 26px;
-    color: #8495a7;
+    color: #444;
     font-weight: 400;
     letter-spacing: -0.2px;
     position: relative;
@@ -165,9 +163,8 @@ ul {
     padding: 0;
     margin: 0;
 }
-p, li, a, span{}
 p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 26px;
     margin-bottom: 15px;
 }
@@ -1083,7 +1080,6 @@ a, a:hover, .overlay, img, .form-control, .form-control:hover, button {
     z-index: 999;
     padding: 0 15px;
 }
-ul.nav{}
 ul.nav > li {
     position: relative;
 }
@@ -1092,7 +1088,7 @@ ul.nav > li > a {
     font-family: 'Work Sans', sans-serif;
     display: inline-block;
     vertical-align: middle;
-    padding: 0 20px;
+    padding: 0 15px;
     letter-spacing: 0;
     font-size: 12px;
     font-weight: 600;
@@ -1178,7 +1174,7 @@ ul.nav > li > a.active {
     border: none;
 }
 #mainmenu li ul li a {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     line-height: 45px;
     display: block;
     padding: 0 15px;
@@ -1260,7 +1256,7 @@ ul.nav > li > a.active {
     z-index: 999;
 }
 .slicknav_nav {
-    background-color: #fff;
+    background-color: #ecd8ff;
     font-size: 16px;
     padding: 20px 15px;
 }
@@ -1336,7 +1332,7 @@ ul.nav > li > a.active {
 .header-right .menu-btn {
     background-color: #a560e8;
     color: #fff!important;
-    padding: 0 30px;
+    padding: 0 15px;
     border-radius: 30px;
     line-height: 45px;
     display: inline-block;
@@ -2172,7 +2168,7 @@ ul.nav > li > a.active {
     border-color: #36bba0;
 }
 .card-body {
-    font-family: "Open Sans",sans-serif;
+    font-family: "Montserrat",sans-serif;
     font-size: 15px;
     line-height: 26px;
     font-weight: 400;

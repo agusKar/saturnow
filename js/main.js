@@ -263,4 +263,11 @@
     var currentYear = new Date().getFullYear();
     $('#currentYear').append(currentYear);
 
+
+
+    $('.slicknav_nav a.nav-link').on("click", function(){
+        $('.slicknav_nav').hide()
+        $('.slicknav_nav').addClass("slicknav_hidden")
+        $('.slicknav_btn').removeClass("slicknav_open").addClass("slicknav_collapsed")
+    })
 })(jQuery);
